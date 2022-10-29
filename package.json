@@ -5,6 +5,7 @@
   "main": "./lib/cjs/index.js",
   "types": "./lib/cjs/types/index.d.ts",
   "scripts": {
+    "dev": "nodemon",
     "test": "mocha"
   },
   "author": "@jetmiky",
@@ -37,6 +38,7 @@
     "@types/mocha": "^10.0.0",
     "chai": "^4.3.6",
     "mocha": "^10.1.0",
+    "nodemon": "^2.0.20",
     "ts-node": "^10.9.1"
   }
 }
