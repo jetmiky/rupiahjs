@@ -1,12 +1,13 @@
 {
-  "name": "@jetmiky/rupiah-js",
+  "name": "@jetmiky/rupiahjs",
   "version": "1.0.0",
   "description": "The only package you need managing Indonesian Rupiah in your projects",
   "main": "./lib/cjs/index.js",
   "types": "./lib/cjs/types/index.d.ts",
   "scripts": {
     "dev": "nodemon",
-    "test": "mocha"
+    "test": "mocha",
+    "build": "tsc"
   },
   "author": "@jetmiky",
   "license": "ISC",
@@ -15,9 +16,9 @@
     "url": "git+https://github.com/jetmiky/rupiahjs.git"
   },
   "bugs": {
-    "url": "https://github.com/jetmiky/rupiah-js/issues"
+    "url": "https://github.com/jetmiky/rupiahjs/issues"
   },
-  "homepage": "https://github.com/jetmiky/rupiah-js#readme",
+  "homepage": "https://github.com/jetmiky/rupiahjs#readme",
   "files": [
     "lib/**/*"
   ],
