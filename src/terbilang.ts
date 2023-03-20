@@ -64,8 +64,10 @@ function calcTerbilang(number: number, resultArray: string[]): void {
 export default function terbilang(nominal: number): string {
   if (nominal in SPECIAL_NUMBERS) return SPECIAL_NUMBERS[nominal];
 
-  const result: string[] = [];
-  calcTerbilang(nominal, result);
+  const isNegative = nominal < 0;
 
-  return result.filter((val) => !!val).join(" ");
+  const resultArray: string[] = [];
+  calcTerbilang(Math.abs(nominal), resultArray);
+
+  return (isNegative ? "Minus " : "") + resultArray.filter((val) => !!val).join(" ");
 }
