@@ -61,6 +61,11 @@ function calcTerbilang(number: number, resultArray: string[]): void {
   }
 }
 
+/**
+ * Convert provided number to Indonesian language.
+ * @param {number} nominal Number to be converted.
+ * @returns {string} Number in Indonesian language.
+ */
 export default function terbilang(nominal: number): string {
   if (nominal in SPECIAL_NUMBERS) return SPECIAL_NUMBERS[nominal];
 
