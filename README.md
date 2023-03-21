@@ -13,7 +13,7 @@ Install package:
 
 ## 🤔 How to use it?
 
-### 1. Using class:
+### 1. Using Rupiah `class`:
 
 #### Initializing.
 
@@ -60,8 +60,8 @@ console.log(price.terbilang);
 
 ```js
 // The available parameters are Prefix and Thousand Separators.
-const prefix = "IDR"; // default to "Rp"
-const separators = "comma"; // default to "dot"
+const prefix = "Rp"; // Available options "Rp" | "IDR", default to "Rp"
+const separators = "dot"; // Available options "dot" | "comma", default to "dot"
 
 // The output of code below is Rp100.000
 console.log(price.getCurrency());
@@ -70,7 +70,7 @@ console.log(price.getCurrency());
 ### 2. Only `terbilang` function:
 
 ```js
-import { terbilang } from "@jetmiky/rupiah-js";
+import { terbilang } from "@jetmiky/rupiahjs";
 
 // The output of code below is "Sepuluh Ribu"
 console.log(terbilang(10000));
@@ -78,6 +78,6 @@ console.log(terbilang(10000));
 
 ---
 
-## ❔Questions
+## ❔ Questions and Improvements
 
-If you found a bug, having question, or requesting a feature, please don't be hesitate to create new issues.
+If you found bugs, having questions, or requesting features, please don't be hesitate to create new issues.
