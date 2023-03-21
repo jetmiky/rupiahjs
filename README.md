@@ -60,11 +60,12 @@ console.log(price.terbilang);
 
 ```js
 // The available parameters are Prefix and Thousand Separators.
-const prefix = "Rp"; // Available options "Rp" | "IDR", default to "Rp"
+const symbol = "Rp"; // Available options "Rp" | "IDR", default to "Rp"
 const separators = "dot"; // Available options "dot" | "comma", default to "dot"
 
 // The output of code below is Rp100.000
 console.log(price.getCurrency());
+console.log(price.getCurrency(symbol, separators));
 ```
 
 ### 2. Only `terbilang` function:

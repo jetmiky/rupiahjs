@@ -46,11 +46,12 @@ export default class Rupiah {
 
   /**
    * Format value in Indonesian currency.
-   * @param {"IDR" | "Rp"} prefix Prefix in front of currency.
+   * @param {"IDR" | "Rp"} symbol Prefix in front of currency.
    * @param {"dot" | "comma"} separator Character of thousand separators.
    * @returns {string} Value in form of Indonesian currency.
    */
-  getCurrency(prefix: "IDR" | "Rp" = "Rp", separator: "dot" | "comma" = "dot"): string {
+  getCurrency(symbol: "IDR" | "Rp" = "Rp", separator: "dot" | "comma" = "dot"): string {
+    const prefix = symbol === "IDR" ? "IDR " : symbol === "Rp" ? "Rp" : "";
     return "".concat(prefix, addSeparator(this._value, separator));
   }
 }
