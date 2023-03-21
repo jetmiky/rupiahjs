@@ -7,9 +7,11 @@
   "scripts": {
     "dev": "nodemon",
     "test": "mocha",
-    "build": "npm run build:cjs && npm run build:esm",
+    "build": "npm run clean && npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
-    "build:esm": "tsc -p ./configs/tsconfig.esm.json"
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json && rename .\\lib\\esm\\index.js index.mjs",
+    "clean": "rmdir /s /q lib",
+    "prepack": "npm run build"
   },
   "author": "@jetmiky",
   "license": "ISC",
@@ -28,7 +30,7 @@
     ".": {
       "import": {
         "types": "./lib/esm/types/index.d.ts",
-        "default": "./lib/esm/index.js"
+        "default": "./lib/esm/index.mjs"
       },
       "require": {
         "types": "./lib/cjs/types/index.d.ts",
