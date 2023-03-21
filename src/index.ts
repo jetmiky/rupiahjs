@@ -1,4 +1,2 @@
-import Rupiah from "./Rupiah";
-import terbilang from "./terbilang";
-
-module.exports = { Rupiah, terbilang };
+export { default as terbilang } from "./terbilang";
+export { default as Rupiah } from "./Rupiah";
