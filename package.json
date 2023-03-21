@@ -1,13 +1,15 @@
 {
   "name": "@jetmiky/rupiahjs",
-  "version": "1.0.0",
-  "description": "The only package you need managing Indonesian Rupiah in your projects",
+  "version": "1.0.3",
+  "description": "The only package needed to manage Indonesian Rupiah in any Javascript projects",
   "main": "./lib/cjs/index.js",
   "types": "./lib/cjs/types/index.d.ts",
   "scripts": {
     "dev": "nodemon",
     "test": "mocha",
-    "build": "tsc"
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json"
   },
   "author": "@jetmiky",
   "license": "ISC",
@@ -26,7 +28,7 @@
     ".": {
       "import": {
         "types": "./lib/esm/types/index.d.ts",
-        "default": "./lib/esm/index.mjs"
+        "default": "./lib/esm/index.js"
       },
       "require": {
         "types": "./lib/cjs/types/index.d.ts",
