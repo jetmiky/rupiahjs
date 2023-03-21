@@ -1,6 +1,10 @@
-# Rupiah-JS
+# Rupiah JS
 
-## ⚙ Installation
+A simple, lightweight, and performant library to manage Indonesian Rupiah in any JavaScript projcets.
+
+Proud to be Indonesian :indonesia:
+
+## :cd: Installation
 
 ### Using package managers
 
@@ -11,7 +15,7 @@ Install package:
 
 ---
 
-## 🤔 How to use it?
+## :sunglasses: How to use it?
 
 ### 1. Using Rupiah `class`:
 
@@ -79,6 +83,6 @@ console.log(terbilang(10000));
 
 ---
 
-## ❔ Questions and Improvements
+## :question: Questions and Improvements
 
 If you found bugs, having questions, or requesting features, please don't be hesitate to create new issues.
