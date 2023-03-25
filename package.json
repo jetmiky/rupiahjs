@@ -1,6 +1,6 @@
 {
   "name": "@jetmiky/rupiahjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The only package needed to manage Indonesian Rupiah in any Javascript projects",
   "main": "./lib/cjs/index.js",
   "types": "./lib/cjs/types/index.d.ts",
@@ -13,7 +13,7 @@
     "clean": "rmdir /s /q lib",
     "prepack": "npm run build"
   },
-  "author": "@jetmiky",
+  "author": "Bima Jatmiko Abadi <bja.devs@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -23,6 +23,15 @@
     "url": "https://github.com/jetmiky/rupiahjs/issues"
   },
   "homepage": "https://github.com/jetmiky/rupiahjs#readme",
+  "keywords": [
+    "rupiah",
+    "indonesia",
+    "terbilang",
+    "currency",
+    "number-to-words",
+    "format",
+    "typescript"
+  ],
   "files": [
     "lib/**/*"
   ],
