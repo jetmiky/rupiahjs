@@ -1,6 +1,6 @@
 {
   "name": "@jetmiky/rupiahjs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The only package needed to manage Indonesian Rupiah in any Javascript projects",
   "main": "./lib/cjs/index.js",
   "types": "./lib/cjs/types/index.d.ts",
@@ -54,5 +54,10 @@
     "mocha": "^10.1.0",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "currency.js": "^2.0.4",
+    "lodash": "^4.17.21",
+    "text-formatter-js": "^0.0.1"
   }
 }
